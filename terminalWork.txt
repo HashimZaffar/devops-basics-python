@@ -1,0 +1,306 @@
+Last login: Sun Jan 18 14:26:11 on ttys001
+hashimzaffar@Hashim-zaffar-CR ~ % cd ~
+hashimzaffar@Hashim-zaffar-CR ~ % mkdir DevOpsPortfolio
+hashimzaffar@Hashim-zaffar-CR ~ % cd DevOpsPortfolio
+hashimzaffar@Hashim-zaffar-CR DevOpsPortfolio % mkdir 1stDevOpsProject
+hashimzaffar@Hashim-zaffar-CR DevOpsPortfolio % cd 1stDevOpsProject
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % python3 --version
+Python 3.9.6
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % pwd
+/Users/hashimzaffar/DevOpsPortfolio/1stDevOpsProject
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % touch README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % touch file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % nano file_manager.py
+
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls -l
+total 8
+-rw-r--r--  1 hashimzaffar  staff    0 Jan 18 15:15 README.md
+-rw-r--r--  1 hashimzaffar  staff  513 Jan 18 15:18 file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % chmod +x file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ./file_manager.py
+DevOps File Manager Script
+Directory 'example_directory' created
+File created successfully
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % cd example_directory
+hashimzaffar@Hashim-zaffar-CR example_directory % ls
+example.txt
+hashimzaffar@Hashim-zaffar-CR example_directory % cat example.txt
+This file was created using Python automation.
+hashimzaffar@Hashim-zaffar-CR example_directory % cd ..
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % nano README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % cat README.md
+# DevOps Basics with Python Automation
+
+This project demonstrates basic DevOps concepts using:
+- Linux/macOS terminal
+- Python scripting
+- Automation mindset
+
+## What This Project Does
+- Creates a directory using Python
+- Creates a file inside the directory
+- Writes content automatically
+
+## Technologies Used
+- Python 3
+- macOS Terminal (Unix-based)
+- os module
+
+## How to Run
+1. Clone the repository
+2. Run the script:
+   python3 file_manager.py
+
+## Why This Project Matters
+Automation is a core DevOps skill. This project shows how repetitive tasks
+can be automated using simple Python scripts.
+
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git init
+Initialized empty Git repository in /Users/hashimzaffar/DevOpsPortfolio/1stDevOpsProject/.git/
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+	example_directory/
+	file_manager.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git add .
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git commit -m "Initial DevOps Python automation project"
+
+[main (root-commit) cfcb9e8] Initial DevOps Python automation project
+ Committer: Hashim zaffar <hashimzaffar@Hashim-zaffar-CR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 50 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 example_directory/example.txt
+ create mode 100755 file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git branch -M main
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git remote add origin git@github.com:HashimZaffar/devops-basics-python.git
+
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push -u origin main
+
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git remote remove origin
+
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git remote add origin https://github.com/HashimZaffar/devops-basics-python.git
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push -u origin main
+
+Username for 'https://github.com': HashimZaffar
+Password for 'https://HashimZaffar@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/HashimZaffar/devops-basics-python.git/'
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push -u origin main
+
+Username for 'https://github.com': HashimZaffar
+Password for 'https://HashimZaffar@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/HashimZaffar/devops-basics-python.git/'
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push -u origin main
+
+Username for 'https://github.com': HashimZaffar
+Password for 'https://HashimZaffar@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.02 KiB | 1.02 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HashimZaffar/devops-basics-python.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % printf ".DS_Store\n__pycache__/\n*.pyc\nexample_directory/\n" > .gitignore
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git add .gitignore
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git commit -m "Add gitignore"
+
+[main da9d2f5] Add gitignore
+ Committer: Hashim zaffar <hashimzaffar@Hashim-zaffar-CR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+ create mode 100644 .gitignore
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/HashimZaffar/devops-basics-python.git
+   cfcb9e8..da9d2f5  main -> main
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % nano README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git add README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git commit -m "Improve README for portfolio"
+[main 1ac69a0] Improve README for portfolio
+ Committer: Hashim zaffar <hashimzaffar@Hashim-zaffar-CR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 338 insertions(+)
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 823 bytes | 823.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/HashimZaffar/devops-basics-python.git
+   da9d2f5..1ac69a0  main -> main
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % rm README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % touch README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % nano README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % ls
+README.md		example_directory	file_manager.py
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git add README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git commit -m "Improve README for portfolio"
+
+[main 48f2ffc] Improve README for portfolio
+ Committer: Hashim zaffar <hashimzaffar@Hashim-zaffar-CR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 74 insertions(+), 316 deletions(-)
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.50 KiB | 1.50 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/HashimZaffar/devops-basics-python.git
+   1ac69a0..48f2ffc  main -> main
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % nano README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git add README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git commit -m "Improve README for portfolio"
+
+[main a27aa21] Improve README for portfolio
+ Committer: Hashim zaffar <hashimzaffar@Hashim-zaffar-CR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 deletions(-)
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push         
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HashimZaffar/devops-basics-python.git
+   48f2ffc..a27aa21  main -> main
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % nano README.md   
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git add README.md
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git commit -m "Improve README for portfolio"
+
+[main 881ec7e] Improve README for portfolio
+ Committer: Hashim zaffar <hashimzaffar@Hashim-zaffar-CR.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 deletions(-)
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject % git push         
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/HashimZaffar/devops-basics-python.git
+   a27aa21..881ec7e  main -> main
+hashimzaffar@Hashim-zaffar-CR 1stDevOpsProject %  
+
