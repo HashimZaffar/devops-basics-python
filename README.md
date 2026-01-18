@@ -110,8 +110,4 @@ Planned enhancements for learning purposes:
 **Hashim Zaffar**
 Aspiring DevOps Engineer
 
-````
-
-
-
 
